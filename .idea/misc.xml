@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/EServices/app/src/main/res/drawable-v24/edittext_rounded.xml" value="0.22205128205128205" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/EServices/app/src/main/res/drawable-v24/ic_account_circle_black_24dp.xml" value="0.22205128205128205" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/EServices/app/src/main/res/drawable-v24/search_button.xml" value="0.21388888888888888" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/EServices/app/src/main/res/drawable/edittext_rounded.xml" value="0.22205128205128205" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/EServices/app/src/main/res/drawable/gradient.xml" value="0.2" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/EServices/app/src/main/res/drawable/search_button.xml" value="0.21388888888888888" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/EServices/app/src/main/res/layout-w936dp/searchfragment.xml" value="0.23536299765807964" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/EServices/app/src/main/res/layout/activity_fisrt_page.xml" value="0.209375" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/EServices/app/src/main/res/layout/activity_give_feedback_to_worker.xml" value="0.209375" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/EServices/app/src/main/res/layout/activity_login.xml" value="0.21" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/EServices/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/EServices/app/src/main/res/layout/activity_registration_worker.xml" value="0.14" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/EServices/app/src/main/res/layout/activity_testrecyc.xml" value="0.21" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/EServices/app/src/main/res/layout/activity_user_dash_board.xml" value="0.10182370820668693" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/EServices/app/src/main/res/layout/activity_user_dashboard.xml" value="0.21" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/EServices/app/src/main/res/layout/activity_user_edit_profile.xml" value="0.18" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/EServices/app/src/main/res/layout/activity_user_rate_us.xml" value="0.209375" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/EServices/app/src/main/res/layout/activity_worker_dashboard.xml" value="0.18" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/EServices/app/src/main/res/layout/activity_worker_edit_profile.xml" value="0.209375" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/EServices/app/src/main/res/layout/activity_worker_no_click.xml" value="0.209375" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/EServices/app/src/main/res/layout/activity_worker_profile.xml" value="0.18" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/EServices/app/src/main/res/layout/activity_worker_rate_us.xml" value="0.16822916666666668" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/EServices/app/src/main/res/layout/activity_worker_yes_click.xml" value="0.1875" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/EServices/app/src/main/res/layout/content_user_dash_board.xml" value="0.209375" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/EServices/app/src/main/res/layout/date_time.xml" value="0.10182370820668693" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/EServices/app/src/main/res/layout/dropdown_item.xml" value="0.209375" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/EServices/app/src/main/res/layout/feedbackfragment.xml" value="0.209375" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/EServices/app/src/main/res/layout/homefragment.xml" value="0.209375" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/EServices/app/src/main/res/layout/item_feedback_user.xml" value="0.209375" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/EServices/app/src/main/res/layout/item_recycle_bok.xml" value="0.209375" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/EServices/app/src/main/res/layout/item_recycle_book.xml" value="0.22" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/EServices/app/src/main/res/layout/item_recycle_history.xml" value="0.25" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/EServices/app/src/main/res/layout/item_recycle_user_history.xml" value="0.209375" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/EServices/app/src/main/res/layout/search_item.xml" value="0.2" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/EServices/app/src/main/res/layout/searchfragment.xml" value="0.22" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/EServices/app/src/main/res/layout/test.xml" value="0.18" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/EServices/app/src/main/res/layout/user_dashboard_try.xml" value="0.209375" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/EServices/app/src/main/res/layout/worker_dashboard_try.xml" value="0.209375" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/EServices/app/src/main/res/layout/worker_feedback_fragment.xml" value="0.19375" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/EServices/app/src/main/res/layout/worker_history_fragment.xml" value="0.19375" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/EServices/app/src/main/res/layout/worker_newbook_fragment.xml" value="0.19375" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/EServices/app/src/main/res/layout/worker_profile_feedback_view.xml" value="0.209375" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/EServices/app/src/main/res/layout/worker_profile_feedbacks.xml" value="0.22" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/EServices/app/src/main/res/layout/worker_view_feedback.xml" value="0.209375" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/EServices/app/src/main/res/menu/main_menu.xml" value="0.18" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

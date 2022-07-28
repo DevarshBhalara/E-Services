@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">E-Services</string>
+    <string name="strlink">      https://9e99-49-34-198-120.ngrok.io/eservices/</string>
+    <string name="title_activity_user_dash_board">UserDashBoard</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_user_dashboard">UserDashboard</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_worker_dashboard">WorkerDashboard</string>
+
+    <string name="prompt2">Choose a type..</string>
+    <string name="prompt">Choose a Profession</string>
+    <string-array name="profession">
+        <item>Plumber</item>
+        <item>Carpenter</item>
+        <item>Electrician</item>
+        <item>Welder</item>
+        <item> Other </item>
+    </string-array>
+
+    <string-array name="programming_languages">
+        <item>Java</item>
+        <item>Kotlin</item>
+        <item>Python</item>
+        <item>CPP</item>
+    </string-array>
+
+    <string-array name="array_gujarat_districts">
+        <item>Select Your District</item>
+        <item>Ahmedabad</item><item>Amreli</item><item>Anand</item><item>Aravalli</item><item>Banaskantha</item><item>Bharuch</item>
+        <item>Bhavnagar</item><item>Botad</item><item>Chhota Udaipur</item><item>Dahod</item><item>Dang</item><item>Devbhoomi Dwarka</item>
+        <item>Gandhinagar</item><item>Gir Somnath</item><item>Jamnagar</item><item>Junagadh</item><item>Kheda</item><item>Kutch</item>
+        <item>Mahisagar</item><item>Mehsana</item><item>Morbi</item><item>Narmada</item><item>Navsari</item><item>Panchmahal</item>
+        <item>Patan</item><item>Porbandar</item><item>Rajkot</item><item>Sabarkantha</item><item>Surat</item><item>Surendranagar</item>
+        <item>Tapi</item><item>Vadodara</item><item>Valsad</item>
+    </string-array>
+</resources>

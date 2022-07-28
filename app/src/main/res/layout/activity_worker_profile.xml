@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#f7f7f7"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/firstrl"
+            android:background="#36d1dc"
+            android:padding="20dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/profilepngfinal" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-50dp"
+            android:layout_width="match_parent"
+            android:padding="20dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                app:cardElevation="5dp"
+                >
+
+                <RelativeLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/img"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/ic_baseline_miscellaneous_services_24" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/img"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/rl4">
+
+                        <TextView
+                            android:id="@+id/profession_in_profile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="Profession : "
+
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/profession_in_profile2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="Profession  "
+
+                            android:layout_toRightOf="@id/profession_in_profile"
+                            android:textSize="20sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/loading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="#f4f4f4"
+                        android:padding="20dp"
+                        android:visibility="invisible">
+
+                        <ProgressBar
+                            android:id="@+id/prog"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:visibility="invisible">
+
+
+                        </ProgressBar>
+
+                        <TextView
+                            android:id="@+id/tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/prog"
+                            android:text="Loading.."
+                            android:textSize="20sp"
+                            android:visibility="invisible">
+
+                        </TextView>
+
+                    </RelativeLayout>
+
+
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/second">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:id="@+id/worker_details_card"
+                android:scrollbars="vertical"
+                android:layout_width="match_parent"
+                app:cardElevation="5dp"
+                >
+
+                <RelativeLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:id="@+id/rl_name">
+
+                        <ImageView
+
+                            android:layout_height="30dp"
+                            android:layout_width="30dp"
+                            android:id="@+id/img_acc"
+                            android:src="@drawable/ic_baseline_account_circle_24"
+                            />
+
+                        <TextView
+                            android:id="@+id/worker_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:includeFontPadding="false"
+                            android:text="Worker Name : "
+                            android:layout_centerInParent="true"
+                            android:layout_toRightOf="@id/img_acc"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/worker_name_data"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_toRightOf="@id/worker_name"
+                            android:includeFontPadding="false"
+                            android:text="N/A"
+                            android:textSize="20sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:id="@+id/rl_mono"
+                        android:layout_below="@id/rl_name">
+
+                        <ImageView
+
+                            android:layout_height="30dp"
+                            android:layout_width="30dp"
+                            android:id="@+id/img_phone"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_baseline_local_phone_24"
+                            />
+
+                        <TextView
+                            android:id="@+id/worker_mono"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:includeFontPadding="false"
+                            android:text="Mobile Number : "
+                            android:layout_centerInParent="true"
+                            android:layout_toRightOf="@id/img_phone"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/worker_mono_data"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:includeFontPadding="false"
+                            android:text="N/A"
+                            android:layout_centerInParent="true"
+                            android:layout_toRightOf="@id/worker_mono"
+                            android:textSize="20sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:id="@+id/rl_add"
+                        android:layout_below="@id/rl_mono">
+
+                        <ImageView
+
+                            android:layout_height="30dp"
+                            android:layout_width="30dp"
+                            android:id="@+id/img_address"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_baseline_home_24"
+                            />
+
+                        <TextView
+                            android:id="@+id/worker_add"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:includeFontPadding="false"
+                            android:text="Address : "
+                            android:layout_centerInParent="true"
+                            android:layout_toRightOf="@id/img_address"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/worker_add_data"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:includeFontPadding="false"
+                            android:text="N/A"
+                            android:layout_centerInParent="true"
+                            android:layout_toRightOf="@id/worker_add"
+                            android:textSize="20sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:id="@+id/rl_city"
+                        android:layout_below="@id/rl_add">
+
+                        <ImageView
+
+                            android:id="@+id/img_city"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_baseline_location_city_24" />
+
+                        <TextView
+                            android:id="@+id/worker_city"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:includeFontPadding="false"
+                            android:text="City : "
+                            android:layout_centerInParent="true"
+                            android:layout_toRightOf="@id/img_city"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/worker_data_city"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:includeFontPadding="false"
+                            android:text="N/A"
+                            android:layout_centerInParent="true"
+                            android:layout_toRightOf="@id/worker_city"
+                            android:textSize="20sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:id="@+id/rl_rating"
+                        android:layout_below="@id/rl_city">
+
+                        <ImageView
+
+                            android:id="@+id/img_rating"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_baseline_star_rate_24" />
+
+                        <TextView
+                            android:id="@+id/worker_rating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:includeFontPadding="false"
+                            android:text="Rating : "
+                            android:layout_centerInParent="true"
+                            android:layout_toRightOf="@id/img_rating"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/worker_data_rating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:includeFontPadding="false"
+                            android:text="N/A"
+                            android:layout_centerInParent="true"
+                            android:layout_toRightOf="@id/worker_rating"
+                            android:textSize="20sp" />
+
+                    </RelativeLayout>
+
+
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/worker_details_card"
+                android:layout_margin="10dp"
+                android:id="@+id/btns"
+                android:layout_centerHorizontal="true"
+                android:padding="20dp">
+
+                <Button
+                    android:id="@+id/btnBook"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Book?">
+
+                </Button>
+                <Button
+                    android:id="@+id/btnCall"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/btnBook"
+                    android:text="Call">
+
+                </Button>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btns"
+                android:id="@+id/rlv">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FF8596"
+                    android:textSize="20sp"
+                    android:layout_centerHorizontal="true"
+                    android:text="Reviews"
+                    android:id="@+id/tvrev"
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#618C8F"
+                android:layout_below="@id/rlv"
+                android:layout_marginTop="15dp"
+                android:id="@+id/line"
+                >
+
+            </View>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_height="350dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/worker_details_card2"
+                android:scrollbars="vertical"
+                android:layout_below="@id/line"
+                android:layout_width="match_parent"
+                app:cardElevation="5dp"
+                >
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/recycrev"
+                    android:layout_below="@id/worker_details_card"/>
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line"
+                android:textColor="#FF8596"
+                android:id="@+id/tvNoRev"
+                android:textSize="20sp"
+                android:visibility="invisible"
+                android:layout_centerHorizontal="true"
+                android:text="Sorry! No Feedback Available"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"> </TextView>
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

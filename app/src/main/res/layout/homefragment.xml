@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl1"
+        >
+
+        <TextView
+            android:id="@+id/tvYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Accepted"
+            android:layout_marginLeft="10dp"
+            android:textColor="#FF8596"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tvYes"
+            android:layout_marginTop="15dp"
+            android:id="@+id/switchHistory"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            tools:ignore="UseSwitchCompatOrMaterialXml">
+
+        </Switch>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#618C8F"
+        android:layout_below="@id/rl1"
+        android:layout_marginTop="15dp"
+        android:id="@+id/line"
+        >
+
+    </View>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recycofhome"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/line"
+            android:fitsSystemWindows="true"
+            android:padding="2dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/tvNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Sorry! No History Available"
+        android:textColor="#FF8596"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="invisible">
+
+    </TextView>
+
+
+    <RelativeLayout
+        android:id="@+id/rlLoadingHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#f5f5f5"
+        android:padding="15dp"
+        android:visibility="invisible">
+
+        <ProgressBar
+            android:id="@+id/progHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:visibility="invisible">
+
+
+        </ProgressBar>
+
+        <TextView
+            android:id="@+id/tvHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/progHistory"
+            android:text="Loading.."
+            android:textSize="20sp"
+            android:visibility="invisible">
+
+        </TextView>
+
+
+    </RelativeLayout>
+    <!--LoadingOver-->
+
+</RelativeLayout>

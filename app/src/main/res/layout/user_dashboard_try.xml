@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/include"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="0dp"
+        android:backgroundTint="@color/white"
+        app:tabIndicatorColor="#03A9F4"
+        app:tabIndicatorHeight="3.5dp"
+        app:tabSelectedTextColor="#03A9F4"
+
+        app:tabTextColor="#618C8F">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home">
+
+        </com.google.android.material.tabs.TabItem>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="History">
+
+        </com.google.android.material.tabs.TabItem>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/feedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Feedback">
+
+        </com.google.android.material.tabs.TabItem>
+
+    </com.google.android.material.tabs.TabLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/include"
+             android:layout_marginTop="0dp"
+            android:id="@+id/fragmentcontainer">
+
+        </androidx.viewpager.widget.ViewPager>
+
+    </RelativeLayout>

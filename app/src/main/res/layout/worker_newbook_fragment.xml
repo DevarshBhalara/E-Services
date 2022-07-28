@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/gradient"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl1"
+        >
+
+        <TextView
+            android:id="@+id/tvYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Today's Work"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="#FF8596"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#618C8F"
+            android:layout_below="@id/tvYes"
+            android:layout_marginTop="5dp"
+            android:id="@+id/line"
+            >
+        </View>
+    </RelativeLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl1"
+        android:layout_marginTop="15dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl1"
+            android:layout_marginTop="15dp">
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:id="@+id/tvNoNew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="No work Available"
+        android:textColor="#FF8596"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="invisible">
+
+    </TextView>
+
+    <RelativeLayout
+        android:id="@+id/rlLoadingNewbook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#f5f5f5"
+        android:padding="15dp"
+        android:visibility="invisible">
+
+        <ProgressBar
+            android:id="@+id/progNewbook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:visibility="invisible">
+
+
+        </ProgressBar>
+
+        <TextView
+            android:id="@+id/tvNewbook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/progNewbook"
+            android:text="Loading.."
+            android:textSize="20sp"
+            android:visibility="invisible">
+
+        </TextView>
+
+
+    </RelativeLayout>
+    <!--LoadingOver-->
+
+
+
+</RelativeLayout>

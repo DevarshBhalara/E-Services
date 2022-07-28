@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="8dp"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardview"
+        android:layout_margin="2dp"
+        app:cardCornerRadius="10dp"
+        android:elevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+            <!--android:background="@drawable/gradient">-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/Ll">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:text="Name : " >
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/username"
+                        android:textSize="17sp"
+                        android:text=" Name " >
+
+                    </TextView>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:text="Mobile Number : " >
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/mobile_number"
+                        android:textSize="17sp"
+                        android:text=" Mobile Number " >
+
+                    </TextView>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:text="Date : " >
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/date"
+                        android:textSize="17sp"
+                        android:text="Date" >
+
+                    </TextView>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:text="Address : " >
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/address"
+                        android:textSize="17sp"
+                        android:text="address" >
+
+                    </TextView>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Ll">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_centerInParent="true">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:layout_margin="10dp"
+                        android:id="@+id/btnYes"
+
+                        > </Button>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/btnYes"
+                        android:id="@+id/btnNo"
+                        android:layout_margin="10dp"
+                        android:text="No"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/btnNo"
+                        android:id="@+id/btnCall"
+                        android:layout_margin="10dp"
+                        android:text="Call"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

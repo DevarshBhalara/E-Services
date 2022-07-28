@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/firstrl"
+            android:background="#36d1dc"
+            android:padding="20dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/profilepngfinal" />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:id="@+id/secrl" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvEdit"
+                android:text="Edit"
+                android:textColor="#FF8596"
+                android:textSize="20sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/switchEdit"
+                tools:ignore="UseSwitchCompatOrMaterialXml">
+
+            </Switch>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#618C8F"
+            android:layout_below="@id/rl1"
+            android:layout_marginTop="15dp"
+            android:id="@+id/line"
+            >
+
+        </View>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll2"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_rounded"
+                android:hint="Name"
+                android:padding="10dp"
+                android:id="@+id/ed_uname_w"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                >
+
+            </EditText>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_rounded"
+                android:hint="Mobile Number"
+                android:padding="10dp"
+                android:layout_below="@id/ed_uname_w"
+                android:layout_marginTop="15dp"
+                android:id="@+id/ed_mobile_number_w"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                >
+
+            </EditText>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_rounded"
+                android:hint="Email"
+                android:padding="10dp"
+                android:layout_below="@id/ed_mobile_number_w"
+                android:layout_marginTop="15dp"
+                android:id="@+id/ed_email_w"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                >
+
+            </EditText>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_rounded"
+                android:hint="Profession"
+                android:padding="10dp"
+                android:layout_below="@id/ed_email_w"
+                android:layout_marginTop="15dp"
+                android:id="@+id/ed_profession_w"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                >
+
+            </EditText>
+
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_rounded"
+                android:hint="Address"
+                android:layout_below="@id/ed_profession_w"
+                android:padding="10dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/ed_address_w"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                >
+            </EditText>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_rounded"
+                android:hint="City"
+                android:padding="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/ed_address_w"
+                android:id="@+id/ed_city_w"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                >
+            </EditText>
+
+            <RelativeLayout
+                android:id="@+id/rlLoadingW"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="#f5f5f5"
+                android:padding="15dp"
+                android:visibility="invisible">
+
+                <ProgressBar
+                    android:id="@+id/progEditW"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:visibility="invisible">
+
+
+                </ProgressBar>
+
+                <TextView
+                    android:id="@+id/tvEditLW"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/progEditW"
+                    android:text="Loading.."
+                    android:textSize="20sp"
+                    android:visibility="invisible">
+
+                </TextView>
+
+
+            </RelativeLayout>
+            <!--LoadingOver-->
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+</ScrollView>

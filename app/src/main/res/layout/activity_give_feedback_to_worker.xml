@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".GiveFeedbackToWorker">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Write Your Review..."
+        android:textColor="#FF8596"
+        android:textSize="23sp"
+        android:id="@+id/tvhead"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/edReview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvhead"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/edittext_rounded"
+        android:hint="Write here..."
+        android:maxLines="8"
+        android:minLines="1"
+        android:padding="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF8596"
+        android:textSize="23sp"
+        android:id="@+id/tv2"
+        android:textStyle="bold"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/edReview"
+        android:text="Give Rating">
+
+    </TextView>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv2"
+        android:layout_marginTop="15dp"
+        android:numStars="5"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ratingBar"
+        android:id="@+id/btnAddReview"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:text="Submit Review" />
+
+
+</RelativeLayout>

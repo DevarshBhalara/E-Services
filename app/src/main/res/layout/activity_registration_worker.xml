@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp"
+            android:text="Registration As Worker"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+
+            android:hint="Enter User Name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:id="@+id/ed_uname_worker"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:hint="Enter Mobile Number">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ed_mobile_number_worker"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:hint="Enter Password"
+            app:endIconMode="password_toggle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ed_password_worker"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:hint="Re-enter Password"
+            app:endIconMode="password_toggle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ed_confo_password_worker"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:hint="Enter Email ID">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ed_email_worker" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="15dp"
+            android:entries="@array/profession"
+            android:prompt="@string/prompt" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:id="@+id/profession"
+            android:visibility="invisible"
+            android:layout_marginEnd="30dp">
+        </EditText>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:id="@+id/d"
+
+            android:hint="Select Date of Birth">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:editable="false"
+                android:layout_height="wrap_content"
+                android:id="@+id/ed_dob_worker" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:hint="Enter Address">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ed_address_worker"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:hint="Enter City">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ed_city_worker"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Gender : " />
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gender_grp">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/male_worker"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/female_worker"
+                    android:text="Female" />
+            </RadioGroup>
+        </LinearLayout>
+
+
+
+
+        <Button
+            android:id="@+id/register_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="64dp"
+            android:text="Create Account"
+            android:onClick="insert_worker"
+            />
+
+    </LinearLayout>
+</ScrollView>

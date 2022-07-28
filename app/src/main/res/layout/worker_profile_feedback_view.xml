@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#36d1dc"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        app:cardElevation="5dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mainrl">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="7dp"
+                android:id="@+id/rl1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UserName : "
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:id="@+id/tvuname">
+
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="N/A"
+                    android:textSize="15sp"
+                    android:layout_toRightOf="@id/tvuname"
+                    android:id="@+id/tvUserName">
+
+                </TextView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="7dp"
+                android:id="@+id/rl2"
+                android:layout_below="@id/rl1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Review : "
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:id="@+id/tvreview">
+
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="N/A"
+                    android:textSize="15sp"
+                    android:layout_toRightOf="@id/tvreview"
+                    android:id="@+id/tvReviewUser">
+
+                </TextView>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="7dp"
+                android:id="@+id/rl3"
+                android:layout_below="@id/rl2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rating : "
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:id="@+id/tvrating">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tvRatingUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tvrating"
+                    android:text="N/A "
+                    android:textSize="15sp">
+
+                </TextView>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

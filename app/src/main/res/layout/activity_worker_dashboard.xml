@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#f7f7f7"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/second">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:id="@+id/card_view"
+                android:scrollbars="vertical"
+                app:cardCornerRadius="10dp"
+                android:layout_width="match_parent"
+                app:cardElevation="5dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="25dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="View New Books"
+                        android:id="@+id/tvnewBooks"
+                        android:textSize="22sp"
+                        >
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="click here to view new book and from here you can change you work status"
+                        android:id="@+id/tvnewBooks2"
+                        android:layout_below="@id/tvnewBooks"
+                        />
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:id="@+id/card_view_feedback"
+                android:scrollbars="vertical"
+                android:layout_below="@id/card_view"
+                app:cardCornerRadius="10dp"
+                android:layout_width="match_parent"
+                app:cardElevation="5dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="25dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="View Your Feedbacks"
+                        android:id="@+id/tvfeedback"
+                        android:textSize="22sp"
+                        >
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="click here to view your feedback"
+                        android:id="@+id/tvfeedbacks2"
+                        android:layout_below="@id/tvfeedback"
+                        />
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:id="@+id/card_view_rating"
+                android:scrollbars="vertical"
+                android:layout_below="@id/card_view_feedback"
+                app:cardCornerRadius="10dp"
+                android:layout_width="match_parent"
+                app:cardElevation="5dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="25dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="View Your History"
+                        android:id="@+id/tvhistory"
+                        android:textSize="22sp"
+                        >
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="click here to view your History"
+                        android:id="@+id/tvhistory2"
+                        android:layout_below="@id/tvhistory"
+                        />
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+            <!--<androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/worker_details_card"/>-->
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
